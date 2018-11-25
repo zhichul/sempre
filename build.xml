@@ -33,9 +33,10 @@
     <mkdir dir="${classes}"/>
     <javac srcdir="${src}" destdir="${classes}" classpathref="lib.path" debug="true" includeantruntime="false" source="${source}" target="${target}">
       <include name="edu/stanford/nlp/sempre/*.java"/>
+      <include name="ai/laer/tutorial/hello_world/*.java"/>
       <include name="edu/stanford/nlp/sempre/test/"/>
     </javac>
-    <jar destfile="${libsempre}/sempre-core.jar" basedir="${classes}" includes="edu/**"/>
+    <jar destfile="${libsempre}/sempre-core.jar" basedir="${classes}" includes="**"/>
   </target>
 
   <!-- Compile cache -->
