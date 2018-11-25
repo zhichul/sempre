@@ -29,7 +29,7 @@ public class JavaExecutor extends Executor {
     @Option(gloss = "Formula in the grammar whose name startsWith contextPrefix is context sensitive") 
     public String contextPrefix = "context:";
     @Option(gloss = "Reduce verbosity by automatically appending, for example, edu.stanford.nlp.sempre to java calls")
-    public String classPathPrefix = "ai.laer.tutorial.hello_world.HelloWorld"; // e.g. "edu.stanford.nlp.sempre";
+    public String classPathPrefix = ""; // e.g. "edu.stanford.nlp.sempre";
   }
   public static Options opts = new Options();
 
