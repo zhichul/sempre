@@ -1,0 +1,1 @@
+(rule $ROOT (say hello) (ConstantFn (call sayHello)))
